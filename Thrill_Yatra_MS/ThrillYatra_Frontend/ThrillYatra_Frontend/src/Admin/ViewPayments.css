@@ -1,0 +1,117 @@
+/* ================= Page ================= */
+.payment-page {
+  width: 100%;
+  padding: 32px 40px;
+  background: #fffaf3;
+  min-height: calc(100vh - 64px);
+
+  /* 🔥 FORCE LEFT ALIGN */
+  display: block;
+}
+
+/* ================= Header ================= */
+.payment-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.payment-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff7a00;
+  margin: 0;
+}
+
+/* ================= Filter ================= */
+.payment-filter-select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #ffaf4f;
+  font-weight: 600;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* ================= Table Wrapper ================= */
+.payment-table-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(255, 122, 0, 0.18);
+  overflow-x: auto;
+}
+
+/* ================= Table ================= */
+.payment-table {
+  width: 100%;
+  min-width: 900px; /* 🔥 PREVENTS COLLAPSING */
+  border-collapse: collapse;
+}
+
+.payment-table thead {
+  background: #fff1df;
+}
+
+.payment-table th,
+.payment-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #ffe2c3;
+  font-size: 0.95rem;
+}
+
+.payment-table th {
+  color: #ff7a00;
+  font-weight: 800;
+}
+
+.payment-table td {
+  color: #444;
+  font-weight: 500;
+}
+
+/* ================= Status Badge ================= */
+.pay-status {
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.pay-status.paid {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.pay-status.refunded {
+  background: #f8d7da;
+  color: #842029;
+}
+
+/* ================= Empty ================= */
+.no-data {
+  text-align: center;
+  padding: 28px;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 768px) {
+  .payment-page {
+    padding: 20px;
+  }
+
+  .payment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .payment-title {
+    font-size: 1.6rem;
+  }
+}

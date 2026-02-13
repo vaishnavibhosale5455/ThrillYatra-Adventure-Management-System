@@ -1,0 +1,106 @@
+/* Page */
+.adventure-page {
+  padding: 40px;
+  background: #fffaf3;
+  min-height: calc(100vh - 64px);
+}
+
+/* Title */
+.adventure-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff7a00;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.adventure-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  border: 2px solid #ffaf4f;
+  box-shadow: 0 10px 24px rgba(255, 122, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.adventure-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(255, 122, 0, 0.35);
+}
+
+
+.adventure-card h3 {
+  color: #ff7a00;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.adventure-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff7a00;
+}
+
+.book-btn {
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #ffaf4f, #ff7a00);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.book-btn:hover {
+  opacity: 0.9;
+}
+
+.book-btn.disabled {
+  background: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.status-text {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .adventure-page {
+    padding: 24px;
+  }
+
+  .adventure-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

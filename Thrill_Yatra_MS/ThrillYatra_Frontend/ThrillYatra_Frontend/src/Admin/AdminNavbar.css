@@ -1,0 +1,92 @@
+
+.thrill-admin-navbar {
+  height: 64px;
+  padding: 0 1.8rem;
+  background: linear-gradient(135deg, #ffaf4f, #ff7a00);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 22px rgba(255, 122, 0, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.thrill-admin-logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.thrill-admin-logo span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+.thrill-admin-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+
+.admin-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 22px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+
+.admin-logout-btn {
+  background: #ffffff;
+  color: #ff7a00;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.admin-logout-btn:hover {
+  background: #ffe1c2;
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 768px) {
+  .thrill-admin-logo {
+    font-size: 1.4rem;
+  }
+
+  .admin-user span,
+  .admin-logout-btn span {
+    display: none;
+  }
+
+  .admin-user,
+  .admin-logout-btn {
+    padding: 6px 10px;
+  }
+
+  .thrill-admin-navbar svg {
+    font-size: 20px;
+  }
+}

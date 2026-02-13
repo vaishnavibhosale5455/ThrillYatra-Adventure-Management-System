@@ -1,0 +1,102 @@
+/* Page */
+.reviews-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Heading */
+.reviews-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ff7a00;
+  letter-spacing: 1px;
+}
+
+.reviews-subheading {
+  text-align: center;
+  color: #555;
+  margin-top: 6px;
+  margin-bottom: 35px;
+  font-size: 1rem;
+}
+
+/* Grid */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+/* Card */
+.review-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #ffaf4f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.review-user {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ff7a00;
+}
+
+.review-adventure {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 2px;
+}
+
+/* Date */
+.review-date {
+  font-size: 0.8rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* Comment */
+.review-text {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Empty */
+.no-reviews {
+  text-align: center;
+  color: #777;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .reviews-heading {
+    font-size: 1.7rem;
+  }
+
+  .review-card {
+    padding: 16px;
+  }
+}

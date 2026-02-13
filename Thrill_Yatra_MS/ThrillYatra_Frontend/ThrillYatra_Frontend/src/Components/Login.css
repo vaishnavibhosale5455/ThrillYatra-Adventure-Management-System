@@ -1,0 +1,161 @@
+
+.auth-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #fff5e6,
+    #ffffff
+  );
+  padding: 1rem;
+}
+
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.4rem;
+  background: #ffffff;
+  border-radius: 20px;
+    border: 2px solid #ffaf4f !important;
+  box-shadow: 0 12px 35px rgba(255, 122, 0, 0.25);
+}
+
+
+.thrill-title {
+  color: #ff7a00;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.thrill-subtitle {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+
+.auth-card label {
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+
+.auth-card .form-control {
+  border-radius: 12px;
+  padding: 11px 14px;
+  border: 1px solid #ffd8a8;
+  transition: all 0.3s ease;
+}
+
+.auth-card .form-control:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 0.18rem rgba(255, 122, 0, 0.25);
+}
+
+
+.auth-btn {
+  margin-top: 12px;
+  background: linear-gradient(
+    135deg,
+    #ffaf4f,
+    #ff7a00
+  );
+  color: #ffffff;
+  font-weight: 700;
+  padding: 13px;
+  border-radius: 14px;
+  border: none;
+  letter-spacing: 0.6px;
+  transition: all 0.25s ease;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 122, 0, 0.45);
+  background: linear-gradient(
+    135deg,
+    #ff9f2f,
+    #ff6a00
+  );
+}
+
+
+.auth-btn:disabled {
+  background: #ffd8a8;
+  cursor: not-allowed;
+}
+
+
+.auth-link {
+  text-decoration: none;
+  color: #ff7a00;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+
+.auth-card a strong {
+  color: #ff7a00;
+}
+
+
+.text-danger {
+  font-size: 0.85rem;
+}
+
+/* Sign up section (unique UI) */
+.signup-box {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px dashed #ffd8a8;
+}
+
+.signup-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.signup-text span {
+  color: #ff7a00;
+  font-weight: 700;
+}
+
+/* Sign up button */
+.signup-btn {
+  background: transparent;
+  border: 2px solid #ffaf4f;
+  color: #ff7a00;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.signup-btn:hover {
+  background: #ffaf4f;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 122, 0, 0.35);
+}
+
+
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 1.7rem;
+    border-radius: 16px;
+  }
+
+  .thrill-title {
+    font-size: 1.6rem;
+  }
+}

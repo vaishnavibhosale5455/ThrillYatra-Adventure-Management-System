@@ -1,0 +1,126 @@
+.my-bookings-page {
+  padding: 40px;
+  background: #fffaf3;
+  min-height: 100vh;
+}
+
+.page-title {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff7a00;
+  margin-bottom: 28px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.booking-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  border: 2px solid #ffaf4f;
+  box-shadow: 0 10px 25px rgba(255, 122, 0, 0.15);
+}
+
+.booking-card h3 {
+  color: #ff7a00;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.info-row {
+  font-size: 0.9rem;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.status-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.badge.booked {
+  background: #e6fff3;
+  color: #0f9d58;
+}
+
+.badge.cancelled {
+  background: #ffe6e6;
+  color: #dc3545;
+}
+
+.badge.paid {
+  background: #e8f4ff;
+  color: #0d6efd;
+}
+
+.badge.refunded {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.action-row {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn,
+.review-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #ffe6e6;
+  color: #dc3545;
+}
+
+.cancel-btn:disabled {
+  background: #f0f0f0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.review-btn {
+  background: linear-gradient(135deg, #ffaf4f, #ff7a00);
+  color: #ffffff;
+}
+
+.review-btn:disabled {
+  background: #ffd8a8;
+  cursor: not-allowed;
+}
+
+.status-text {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .my-bookings-page {
+    padding: 24px;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
